@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../images/photos/logo.jpg">
+	<title>Registraion form</title>
+	<link rel="stylesheet" type="text/css" href="registration.css">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<script type="text/javascript" src="registration.js"></script>
+</head>
+<body onload="addCurrentDate()">
+<div class="container">
+	<h1 id="heading"> Registration Form </h1>
+	<form>
+	<div class="content">
+		<div>
+			<label for="firstname">First Name:</label>
+			<input id="firstname" type="text" name="firstname" placeholder="Enter Firstname" onkeyup = "fnmsg()" onblur="fnempty()" required contenteditable="true">
+			<p id="firstnamemsg">First name must be Alphabet</p>
+			<p id="fnemptymsg">Firstname should not be Empty</p>
+		</div>
+		<div>
+			<label for="lastname">Last Name:</label>
+			<input id="lastname" type="text" name="lastname" placeholder="Enter Lastname" onkeyup = "lnmsg()"  onblur="lnempty()" required contenteditable="true">
+			<p id="lastnamemsg">Last name must be Alphabet</p>
+			<p id="lnemptymsg">Last name should not be empty</p>
+		</div>
+		<div>
+			<label for="email">Email address:</label>
+			<input type="email" id="email" onblur="emailfunction()"placeholder="honey@gmail.com" required contenteditable="true">
+			<p id="emailmsg">Please enter valid email address</p>
+		</div>
+		<form class="dob">
+			<label>Date of birth:</label>
+				<select id="day" name="day" required>
+					<option selected value="DD">DD</option>
+				</select>
+				<select id="month" name="month" required>
+					<option selected value="MM">MM</option>
+				</select>
+				<select id="year" name="year" required>
+					<option selected value="YYYY">YYYY</option>
+				</select>
+				<input type="button" id="bday" value="Confirm" onclick = "dateValidation()">
+				<span id="valid">please enter valid date</span>
+			</form>
+		</div>
+		<div class="description">
+			<label for="description">Description:</label>
+			<textarea rows="3" cols="30" id="description" onblur="descEmpty()"></textarea>
+			<p id="descriptionmsg">Description should not be empty</p>
+		</div>
+		<div class="gender">
+			<label >Gender:</label>
+			<input  type="radio" id="male" name="gender" value="male" checked>Male
+			<input  type="radio" id="female" name="gender" value="female">female
+		</div>
+		<div class="hobbies_section">
+			<div class="hobbies">
+				<label >Hobbies:</label>
+				<label ><input type="checkbox" class="hobby" id="hobby1">Reading Books</label>
+				<label ><input type="checkbox" class="hobby" id="hobby2">listening music</label>
+				<label ><input type="checkbox" class="hobby" id="hobby3" id="hobby3">Singing </label>
+			</div>
+			<div class="hobbies">
+				<label></label>
+				<label ><input type="checkbox" class="hobby" id="hobby4">playing music</label>
+				<label ><input type="checkbox" class="hobby" id="hobby5">painting</label>
+				<label ><input type="checkbox" class="hobby" id="hobby6">Indoor games</label>
+			</div>
+			<div class="hobbies">
+				<label></label>
+				<label ><input type="checkbox" class="hobby" id="hobby7">writing stories</label>
+				<label ><input type="checkbox" class="hobby" id="hobby8">dancing</label>
+				<label ><input type="checkbox" class="hobby" id="hobby9">Outdoor games</label>
+			</div>
+			<div class="exclusiveHobby">
+				<label></label>
+				<label ><input id="exclusive" type="radio" name="hobbies" onclick="exclusiveHobby()">Exclusive</label>
+				<label id="other_hobby"><input type="text" id="hobby10" placeholder="Enter your hobby"></label>
+			</div>
+		</div>
+		<div class="uploading">
+			<label>Upload a file:</label>
+			<input type="file" id="upload" placeholder="Upload a file" onchange="previewFile()">
+		</div>
+		<div class="image">
+			<label for="image"></label><img src="" id="image" >
+		</div>
+		<div class="buttons">
+			<input type="button" id="cancel" onclick="cancel()" value="Cancel">
+			<input type="button" id="reset" onclick="reset()" value="Reset">
+			<input type="submit" id="submit"onclick = "submit()" value="Submit"><br><br>
+		</div>
+	</form>
+</div>
+</body>
+</html>

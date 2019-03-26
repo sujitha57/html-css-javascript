@@ -1,0 +1,72 @@
+<!DOCTYPE>
+<html>
+<style>
+
+.images img
+{
+  width:200px;
+  height:200px;
+  display:flex;
+}
+</style>
+
+<body>
+<button onclick="loadDoc()">RequestData</button>
+<p id="demo"></p>
+  <div class="images">
+    <ul id="listOfImages">
+    </ul>
+  </div>
+</body>
+<script type="text/javascript" >//src= images.json>
+//var image;
+function loadDoc() {
+  function readTextFile(file, callback) {
+    var image;
+      var rawFile = new XMLHttpRequest();
+      rawFile.overrideMimeType("application/json");
+      rawFile.open("GET", file, true);
+      rawFile.onreadystatechange = function() {
+          if (rawFile.readyState === 4 && rawFile.status == "200") {
+            // var str = JSON.stringify(this.responseText);
+            // image = JSON.parse(str);
+            callback(this.responseText);
+          }
+      }
+      rawFile.send(null);
+  }
+
+  //usage:
+  readTextFile("images.json", function(text){
+      var arrayItems = [];
+      arrayItems = JSON.parse(text);
+      console.log(arrayItems.length);
+      xyz(arrayItems);
+    });
+  }
+  function xyz(image){
+    var ulObj = document.getElementById("listOfImages");
+    for(let i = 0; i < image.length; i++){
+      var list = document.createElement("li");
+      list.className = "images";
+      list.innerHTML = '<img src="../images/photos/' + image[i]  + '" />';
+      ulObj.appendChild(list);
+    }
+  }
+</script>
+<!--<script>
+window.onload = function ()
+{
+  loadDoc();
+  var ulObj = document.getElementById("listOfImages");
+  for(let i = 0; i < images.length; i++){
+    var list = document.createElement("li");
+    list.className = "images";
+    list.innerHTML = '<img src="../images/photos/' + images[i]  + '" />';
+    ulObj.appendChild(list);
+    document.getElementById("listOfImages").appendChild(list);
+    console.log(list);
+  }
+}
+</script>-->
+</html>

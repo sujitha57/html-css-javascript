@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../images/photos/logo.jpg">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<script type="text/javascript" src="home.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+</head>
+<body>
+	<header class="heading">
+		<div class="hamburgercontainer">
+			<div id="hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="dropdown">
+				<ul class="dropdownlist">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Products</a>
+						<ul>
+							<li><a href="#">IOT</a></li>
+							<li><a href="#">ABC</a></li>
+							<li><a href="#">PQR</a></li>
+							<li><a href="#">XYZ</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact us</a></li>
+					<li><a href="#">References</a></li>
+				</ul>
+			</div>
+		</div>
+		<label for="name">Sujitha Chakali.</label>
+		<nav class="menubar">
+			<a class="menu"></a>
+			<ul>
+				<li><a href="#">Home</a>
+					<ul>
+						<li><a href="#">IOT</a></li>
+						<li><a href="#">ABC</a></li>
+						<li><a href="#">PQR</a></li>
+						<li><a href="#">XYZ</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Products</a>
+					<ul>
+						<li><a href="#">IOT</a></li>
+						<li><a href="#">ABC</a></li>
+						<li><a href="#">PQR</a></li>
+						<li><a href="#">XYZ</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">References</a>
+					<ul>
+						<li><a href="#">IOT</a></li>
+						<li><a href="#">ABC</a></li>
+						<li><a href="#">PQR</a></li>
+						<li><a href="#">XYZ</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!--<figure>
+			<span><img src="../images/photos/tibcologo.jpg"></span>
+			<figcaption>Profilepic</figcaption>
+		</figure>-->
+		<figure class="profilepic">
+			<figcaption>Profilepic</figcaption>
+			<div class="outer-circle">
+				<div class="inner-circle">
+					<img src="C:\Users\suchakal\Desktop\Task\images\photos/img_avatar.png">
+				</div>
+
+			</div>
+		</figure>
+	</header>
+	<div class="image">
+		<figure><span><img src="../images/photos/image1.jpg" alt="Picture"></span>
+			<figcaption>Picture</figcaption>
+		</figure>
+		<p>
+			<span>What is Lorem Ipsum?</span>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>
+		<p>
+			<span>Why do we use it?</span>
+			It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+		</p>
+	</div>
+
+	<section class="content">
+
+		<div class="section-left width-20">
+			<div class="container1">
+				<h4>Login page </h4>
+	  		<p id="arrow"></p>
+	  		<div class="filter">
+					<dl class="text">
+		 				<dt><label for="name">Name:</label><input type="text" name="name" id="name" required></dt>
+						<dt><label for="password">Password:</label><input type="password" name="pwd" id="password" required></dt>
+	    			<dt><label for="login">Login:</label><input type="button" name="login" value="Login" id="login" onclick="empDetails()"></dt>
+	        </dl>
+		 		</div>
+			</div>
+			<div class="sidebar">
+				<select id="branches" name="branches" >
+					<option selected value="select branch">Select branch</option>
+					<option value="pauloalto">pauloalto</option>
+					<option value="hyderabad">hyderabad</option>
+					<option value="pune">pune</option>
+					<option value="bangalore">bangalore</option>
+					<option value="mexico">mexico</option>
+				</select>
+			</div>
+			<div class="sidebar">
+				<select id="branches" name="branches" >
+					<option selected value="select team">Select team</option>
+					<option value="ux team">UX team</option>
+					<option value="full stack development">Full stack development</option>
+					<option value="Technical writers">Technical writers</option>
+					<option value="automation team">Autoamtion team</option>
+					<option value="research and development">Research and development</option>
+				</select>
+			</div>
+			<div class="lists">
+				<ul>
+					<li><a href="#"> ABC</a></li>
+					<li><a href="#"> ABC</a></li>
+					<li><a href="#"> ABC</a></li>
+					<li><a href="#"> ABC</a></li>
+					<li><a href="#"> ABC</a></li>
+				</ul>
+			</div>
+			<div class="paragraph">
+				<h4> Article </h4>
+				<p>	Full lifecycle API Management SaaS solution for internal APIs, B2B APIs, and public API programs.Mashery is an API platform that delivers key API management capabilities needed for successful digital transformation initiatives. Its full range of capabilities includes API creation, packaging, testing, and management of your APIs and community of users. API security is provided via an embedded or optional on-premise API gateway.
+				Ideally we wish for you to complete all HTML, CSS and JS courses on Codeschool. Butall new hires will have to complete following courses within the first month. The starsnext to the course represents the priority. Complete all high priority courses first, thenmove on to lower priority ones.Feedback:
+				</p>
+			</div>
+		</div>
+
+		<div class="article width-60">
+			<div class="paragraph">
+				<h4> Tibco description</h4>
+				<p>Ideally we wish for you to complete all HTML, CSS and JS courses on Codeschool. Butall new hires will have to complete following courses within the first month. The starsnext to the course represents the priority. Complete all high priority courses first, thenmove on to lower priority ones.Feedback: It will be really great if you share a quick summary after completing eachcourse so that we can get a pulse on what you liked/disliked about the course. Whatwas useful to you in the course. Did the course fill any gaps in your currentunderstanding?
+				</p>
+				<h4> Article </h4>
+				<p>Full lifecycle API Management SaaS solution for internal APIs, B2B APIs, and public API programs.Mashery is an API platform that delivers key API management capabilities needed for successful digital transformation initiatives. Its full range of capabilities includes API creation, packaging, testing, and management of your APIs and community of users. API security is provided via an embedded or optional on-premise API gateway.
+				Ideally we wish for you to complete all HTML, CSS and JS courses on Codeschool.
+				<!-- Butall new hires will have to complete following courses within the first month. The starsnext to the course represents the priority. Complete all high priority courses first, thenmove on to lower priority ones.Feedback: It will be really great if you share a quick summary after completing eachcourse so that we can get a pulse on what you liked/disliked about the course. Whatwas useful to you in the course. Did the course fill any gaps in your currentunderstanding?
+				--></p>
+			</div>
+			<strong class="add"><label> Members:</label> <a href="#">+</a></strong>
+			<div class="Main-div-members">
+				<div class="Members">
+					<label for="name">Name:</label><label contenteditable="true" id="name">Sujitha</label><br>
+					<label for="eid">ID:</label><label contenteditable="true" id="eid">33567</label><br>
+					<label for="define">Description:</label><textarea rows="1" cols="10" id="define">Sensitive girl</textarea>
+					<p><button ><i class="material-icons">border_color</i></button>
+					<button ><i class="fa fa-trash"></i></button></p>
+				</div>
+				<div class="Members">
+					<label for="name">Name:</label><label contenteditable="true" id="name">Sujitha</label><br>
+					<label for="eid">ID:</label><label contenteditable="true" id="eid">33567</label><br>
+					<label for="define">Description:</label><textarea rows="1" cols="10" id="define">Sensitive girl</textarea>
+					<p><button ><i class="material-icons">border_color</i></button>
+					<button ><i class="fa fa-trash"></i></button></p>
+				</div>
+				<div class="Members">
+					<label for="name">Name:</label><label contenteditable="true" id="name">Sujitha</label><br>
+					<label for="eid">ID:</label><label contenteditable="true" id="eid">33567</label><br>
+					<label for="define">Description:</label><textarea rows="1" cols="10" id="define">Sensitive girl</textarea>
+					<p><button ><i class="material-icons">border_color</i></button>
+					<button ><i class="fa fa-trash"></i></button></p>
+				</div>
+				<div class="Members">
+					<label for="name">Name:</label><label contenteditable="true" id="name">Sujitha</label><br>
+					<label for="eid">ID:</label><label contenteditable="true" id="eid">33567</label><br>
+					<label for="define">Description:</label><textarea rows="1" cols="10" id="define">Sensitive girl</textarea>
+					<p><button ><i class="material-icons">border_color</i></button>
+					<button ><i class="fa fa-trash"></i></button></p>
+				</div>
+				<div class="Members">
+					<label for="name">Name:</label><label contenteditable="true" id="name">Sujitha</label><br>
+					<label for="eid">ID:</label><label contenteditable="true" id="eid">33567</label><br>
+					<label for="define">Description:</label><textarea rows="1" cols="10" id="define">Sensitive girl</textarea>
+					<p><button ><i class="material-icons">border_color</i></button>
+					<button ><i class="fa fa-trash"></i></button></p>
+				</div>
+				<div class="Members">
+					<label for="name">Name:</label><label contenteditable="true" id="name">Sujitha</label><br>
+					<label for="eid">ID:</label><label contenteditable="true" id="eid">33567</label><br>
+					<label for="define">Description:</label><textarea rows="1" cols="10" id="define">Sensitive girl</textarea>
+					<p><button ><i class="material-icons">border_color</i></button>
+					<button ><i class="fa fa-trash"></i></button></p>
+				</div>
+			<!--	<div class="Members">
+					<label for="name">Name:</label><label contenteditable="true" id="name">Sujitha</label><br>
+					<label for="eid">ID:</label><label contenteditable="true" id="eid">33567</label><br>
+					<label for="define">Description:</label><textarea rows="1" cols="10" id="define">Sensitive girl</textarea>
+					<p><button ><i class="material-icons">border_color</i></button>
+					<button ><i class="fa fa-trash"></i></button></p>
+				</div>
+				<div class="Members">
+					<label for="name">Name:</label><label contenteditable="true" id="name">Sujitha</label><br>
+					<label for="eid">ID:</label><label contenteditable="true" id="eid">33567</label><br>
+					<label for="define">Description:</label><textarea rows="1" cols="10" id="define">Sensitive girl</textarea>
+					<p><button ><i class="material-icons">border_color</i></button>
+					<button ><i class="fa fa-trash"></i></button></p>
+				</div>
+				<div class="Members">
+					<label for="name">Name:</label><label contenteditable="true" id="name">Sujitha</label><br>
+					<label for="eid">ID:</label><label contenteditable="true" id="eid">33567</label><br>
+					<label for="define">Description:</label><textarea rows="1" cols="10" id="define">Sensitive girl</textarea>
+					<p><button ><i class="material-icons">border_color</i></button>
+					<button ><i class="fa fa-trash"></i></button></p>
+				</div>
+			</div>-->
+
+			<div class="pagination">
+				<ul>
+	  				<li><a href="#">&laquo;</a></li>
+	  				<li><a href="#">1</a></li>
+	  				<li><a class="active" href="#">2</a></li>
+		  			<li><a href="#">3</a><span>........</span></li>
+		  			<li><a href="#">7</a></li>
+		  			<li><a href="#">8</a></li>
+		  			<li><a href="#">9</a></li>
+		  			<li><a href="#">&raquo;</a></li>
+		  		</ul>
+			</div>
+			<div id="empDetails">
+				<table id="empDetalisList">
+					<tr><th> Name </th><th> Age </th><th> Joining Date </th></tr>
+					<tr id="row1">
+						<td id="name_row1"> ABC </td><td id="age_row1"> 25 </td><td id="joining_row1"> 01/05/2016</td>
+						<td><input type="button" id="edit_button1" value="Edit" class="edit" onclick="editrow('1')">
+								<input type="button" id="save_button1" value="Save" class="save" onclick="saverow('1')">
+								<input type="button" id="delete_button1" value="delete" class="delete" onclick="deleterow('1')">
+						</td>
+					</tr>
+					<tr id="row2">
+						<td id="name_row2"> ABC </td><td id="age_row2"> 25 </td><td id="joining_row2"> 01/05/2016</td>
+						<td><input type="button" id="edit_button2" value="Edit" class="edit" onclick="editrow('2')">
+								<input type="button" id="save_button2" value="Save" class="save" onclick="saverow('2')">
+								<input type="button" id="delete_button2" value="delete" class="delete" onclick="deleterow('2')">
+						</td>
+					</tr>
+					<tr id="row3">
+						<td id="name_row3"> XYZ </td><td id="age_row3"> 25 </td><td id="joining_row3"> 01/05/2016</td>
+						<td><input type="button" id="edit_button3" value="Edit" class="edit" onclick="editrow('3')">
+								<input type="button" id="save_button3" value="Save" class="save" onclick="saverow('3')">
+								<input type="button" id="delete_button3" value="delete" class="delete" onclick="deleterow('3')">
+						</td>
+					</tr>
+					<tr id="row4">
+						<td id="name_row4"> PQR </td><td id="age_row4"> 25 </td><td id="joining_row4"> 01/05/2016</td>
+						<td><input type="button" id="edit_button4" value="Edit" class="edit" onclick="editrow('4')">
+								<input type="button" id="save_button4" value="Save" class="save" onclick="saverow('4')">
+								<input type="button" id="delete_button4" value="delete" class="delete" onclick="deleterow('4')">
+						</td>
+					</tr>
+					<tr >
+						<td><input type="text" id="new_name" value="name"> </td>
+						<td><input type="text" id="new_age" value="age"> </td>
+						<td><input type="date" id="new_joining_date" value="joining date"></td>
+						<td><input type="button" id="add_new_row" value="Add row" onclick="addrow()"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="section-right width-20">
+			<ul>
+				<li><a src="#">ABC</a></li>
+				<li><a src="#">ABC</a></li>
+				<li><a src="#">ABC</a></li>
+				<li><a src="#">ABC</a></li>
+				<li><a src="#">ABC</a></li>
+				<li><a src="#">ABC</a></li>
+			</ul>
+		</div>
+
+	</section>
+
+	<footer class="footer">
+		<p> &copy;copyrights are reserved.</p>
+		<ul>
+			<li><a href="www.facebook.com" class="fa fa-facebook"></a></li>
+			<li><a href="www.twitter.com" class="fa fa-twitter"></a></li>
+			<li><a href="www.toutube.com" class="fa fa-youtube"></a></li>
+			<li><a href="www.instagram.com" class="fa fa-instagram"></a></li>
+			<li><a href="www.google.com" class="fa fa-linkedin"></a></li>
+		</ul>
+	</footer>
+</body>
+</html>

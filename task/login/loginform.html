@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login form</title>
+	<link rel="icon"type="image/jpg"href="../images/photos/logo.jpg">
+	<link rel="stylesheet" type="text/css" href="loginform.css">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+</head>
+<body onload="validPerson()">
+<script type="text/javascript" src="login.js"></script>
+<div class="loginform">
+	<form action="#" id="login">
+		<img src="../images/photos/tibcologo.jpg"/>
+		<div class="username">
+			<label for="username" >Username:</label>
+			<input type="text" name="username" value="suchakal@tibco.com" id="username" required>
+		</div>
+		<div class="password">
+			<label for="password">Password:</label>
+			<input type="password" pattern=".{A-Za-z0-9}" title="must contain atleast one number and one alphabet" name="password" value="password"  id="password" required>
+		</div>
+		<div class="bottom">
+			<a href="#">Forgot password</a>
+			<input type="button" name="Login" value="Login" onclick="login()"><br><br>
+		</div>
+		<div class="remember">
+			<label><input type="checkbox" name="remember" value="remember" >
+			Remember me.</label>
+			<a href="file:///C:/Users/suchakal/Desktop/task/registration/registration.html">Signup</a>
+		</div>
+	</div>
+	</form>
+</div>
+</body>
+</html>

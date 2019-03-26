@@ -1,0 +1,54 @@
+*{
+  font-family: 'Open Sans', arial, sans-serif;
+}
+.secbtn{
+  background-color: #eee;
+  cursor:pointer;
+  padding:20px;
+  color:black;
+  display: block;
+  border:0px;
+  font-size:20px;
+  width:100%;
+  text-align: left;
+  outline:none;
+}
+#accordion1, #accordion2{
+  border:2px solid black;
+  margin:2px;
+}
+.active, .secbtn:hover{
+    background-color: #ccc;
+}
+.secbtn::after{
+  content: "+";
+  float:right;
+  font-size:20px;
+}
+.accrodionItem{
+  max-height:0px;
+  padding:0 18px;
+  border: 1px solid black;
+}
+.active:after{
+  content:"-";
+  font-size: 35px;
+}
+.hide .sections{
+  display:none;
+}
+.hide .secbtn{
+  background-color: #eee;
+}
+.hide .secbtn::after{
+  content:"+";
+  float:right;
+  font-size:20px;
+}
+.show .sections{
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 0px 0px 10px 0px;
+    display:block;
+}
