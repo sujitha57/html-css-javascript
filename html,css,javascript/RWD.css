@@ -1,0 +1,306 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Open Sans', arial, sans-serif;
+}
+.text
+{
+	display: none;
+}
+.header
+{
+	margin: 0px;
+	border:1px solid black;
+	float: left;
+	width: 100%;
+}
+.header span
+{
+	font-size: 20px;
+
+}
+#menubar ul
+{
+	list-style: none;
+	margin-left: 22%;
+}
+#menubar ul li
+{
+	background-color: red;
+	border:1px solid white;
+	width: 130px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	float: left;
+	position: relative;
+}
+#menubar ul li a
+{
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+#menubar ul li a:hover
+{
+	background-color: green;
+}
+#menubar ul ul
+{
+	position: absolute;
+	display: none;
+	margin:0;
+	padding:0;
+}
+#menubar ul li:hover > ul
+{
+	display: block;
+}
+.outer-circle
+{
+	border:1px solid black;
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    background-color: yellow;
+  	float: left;
+  	position: relative;
+}
+.inner-circle img
+{
+	height:80%;
+    width:80%;
+    top:10%;
+    left:10%;
+    border-radius:50%;
+    border:3px solid white;
+    position:absolute;
+}
+.profilepic figcaption
+{
+	text-indent: 0;
+}
+.profilepic
+{
+	float: right;
+	text-align:center;
+}
+.content
+{
+	width: 73%;
+	float: left;
+	margin-right: 1.111%;
+	text-align: justify;
+}
+.leftside
+{
+	width: 13%;
+	float: left;
+	margin-right: 1.111%;
+	border: 1px solid black;
+	padding: 10px;
+}
+.rightside
+{
+	width: 10%;
+	float: left;
+	margin-right: 1.111%;
+}
+.footer 
+{
+	width: 100%;
+	clear: both;
+	border:1px solid blue;
+	text-align: center;
+}
+.footer ul
+{
+	list-style: none;
+}
+.leftside ul
+{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.leftside li
+{
+	padding: 10%;
+	margin-bottom: 5px;
+	list-style: none;
+	background-color: #22b5ff;
+}
+.image
+{
+	max-width: 100%;
+	float: left;
+	border: 2px solid blue;
+}
+.image figure
+{
+	/*clear: left;*/
+	float: right;
+	width: 30%;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+	text-indent: 0;
+	border: thin silver solid;
+ 	margin: 0.5em;
+  	padding: 0.5em;
+
+}
+.image img.scaled
+{
+	width: 100%;
+}
+.outer-container
+ {
+    border: 1px dotted black;
+    overflow: auto;
+    
+}
+
+video {
+    float: left;
+    max-width: 100%;
+}
+
+
+
+@media only screen and (max-width: 768px)
+{
+	*{
+		box-sizing: border-box;	
+	}
+	[class="leftside"]
+	{
+		width: 100%;
+	}
+	[class="content"]
+	{
+		width: 100%;
+	}
+	[class="rightside"]
+	{
+		width:100%;
+	}
+	#hamburger
+	{
+		cursor: pointer;
+		display: block;
+		width: 35px;
+		height: 35px;
+	}
+	.header label
+	{
+		margin-right: 15%;
+		margin-left: 35%;
+	}
+	.header .profilepic
+	{
+		float: right;
+	}
+	.header .profilepic figcaption
+	{
+		caption-side: top;
+		text-align: center;
+		width: 100px;
+		font-weight: bold;
+	}
+	.header
+	{
+		display: flex;
+		position: fixed;
+		background-color: #808080;
+		height: 180px;
+		padding:0px;
+		padding-top: 40px;
+	}
+	.image
+	{
+		margin-top: 180px;
+	}
+	.header #menubar ul
+	{
+		display: none;
+	}
+	.container1
+	{
+		position: fixed;
+		top: 40px;
+		width: 1000px;
+	}
+	.container1 #hamburger div
+	{
+		position: relative;
+	  	width: 35px;
+	    height: 5px;
+	    background-color: black;
+	    margin: 6px 0;
+	    border-radius: 6px;
+	}
+	.filter 
+	{
+	  	position: absolute;
+	  	top: 130px;
+	  	left: 0;
+	  	background-color: #909090;
+	  	overflow: hidden;
+	  	width: 100%;
+	  	height: 0%;
+	  	transition: .5s ease;
+	}
+
+	.container1:hover .filter
+	{
+		height: 200px;
+		z-index: 1;
+	}
+
+	.text
+	{
+		display: block;
+		color: white;
+		font-size: 18px;
+		position: absolute;
+		padding-top: 40px;
+		padding-left: 10px;
+	}
+	.header ul
+	{
+		float: left;
+		background-color: yellow;
+		padding-top: 10px;
+	}
+	.header ul li
+	{
+		display: inline-block;
+		list-style: none;
+		margin-right: 20px;
+		text-decoration-line: none;
+		position: relative;
+	}
+	.header ul li a
+	{
+		display: block;
+		color:red;
+	}
+	.header ul ul
+	{
+		position: absolute;
+		display: none;
+		margin:0;
+		padding:5px;
+	}
+	.header ul li:hover> ul
+	{
+		display: block;
+	}
+
+@media (min-width: 600px)
+{
+	img
+	{
+		width: 100%;
+	}
+}

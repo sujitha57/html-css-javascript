@@ -1,0 +1,202 @@
+header
+{
+	padding: 0.5em;
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	border:1px solid red;
+
+}
+footer ul
+{
+	padding: 0.5em;
+	background-color: white;
+	color: black;
+	text-align: left;
+	font-size: 20px;
+	border:1px solid black;
+	list-style-type: none;
+}
+footer p
+{
+	font-size: 15px;
+	text-align: center;
+}
+section
+{
+	background-color: red;
+	text-align: center;
+}
+em
+{
+	color:red;
+}
+article
+{
+	width:50%;
+	color: black;
+	background-color: yellow;
+	font-style: italic;
+	font-size: 20px;
+}
+table
+{
+	position: absolute;
+	top: 400px;
+	width:50%;
+	left:51%;
+	border:1px solid black;
+	border-collapse: collapse;
+}
+.tableformat
+{
+	float: right;
+	width: 50%;
+}
+td
+{
+	border:1px solid black;
+	text-align: center;
+	width:50px;
+}
+tr:nth-of-type(2n) td:nth-of-type(2n),
+tr:nth-of-type(2n+1) td:nth-of-type(2n+1),
+tr:nth-of-type(2n+2) td:nth-of-type(2n+2)
+{
+	background-color: #900; color:#fff;
+}
+tr:last-of-type
+{
+	text-decoration:line-through;
+}
+
+p:first-of-type
+{
+	text-decoration: underline;
+}
+p:nth-child(2)
+{
+	background-color: blue;
+}
+p::before
+{
+	content: '\2603';
+}
+em:hover
+{
+	background-color: black;
+}
+.quote
+{
+	border-radius:10px;
+	position:relative;
+	padding:20px;
+	background-color:red;
+	color:white;
+}
+.square
+{
+	position: absolute;
+	left: 50%;
+	height:50px;
+	width:50px;
+	background-color: blue;
+}
+.circle
+{
+	position: absolute;
+	left: 55%;
+	height:50px;
+	width: 50px;
+	background-color: #555;
+	border-radius: 50%;
+}
+.oval
+{
+	position: absolute;
+	left: 60%;
+	height: 50px;
+	width: 100px;
+	background-color: yellow;
+	border-radius: 50%;
+	border:2px solid red;
+}
+.triangle-up
+{
+	height:0;width: 0;
+	position: absolute;
+	left: 70%;
+	border:40px solid transparent;
+	border-bottom-color: red;
+}
+.triangle-down
+{
+	position: absolute;
+	left: 70%;
+	height:0;width: 0;
+	border:40px solid transparent;
+	border-top-color: blue;
+}
+.triangle-right
+{
+	position: absolute;
+	left: 70%;
+	height:0;width: 0;
+	border:40px solid transparent;
+	border-left-color: green;
+}
+.triangle-left
+{
+	position: absolute;
+	left: 70%;
+	height:0;width: 0;
+	border:40px solid transparent;
+	border-right-color: orange;
+}
+.triangle-top-left
+{
+	position: absolute;
+	left:78%;
+	height: 0;width: 0;
+	border-right:100px solid transparent;
+	border-top:100px solid red;
+}
+.triangle-top-right
+{
+	position: absolute;
+	left:88%;
+	height: 0;width: 0;
+	border-left:100px solid transparent;
+	border-top:100px solid green;
+}
+.triangle-bottom-left
+{
+	position: absolute;
+	left:88%;
+	height: 0;width: 0;
+	border-right:100px solid transparent;
+	border-bottom:100px solid blue;
+}
+.triangle-bottom-right
+{
+	position: absolute;
+	left:78%;
+	height: 0;width: 0;
+	border-left:100px solid transparent;
+	border-bottom:100px solid orange;
+}
+p [data-tooltip="true"]:hover
+{
+	position: relative;
+}
+p [data-tooltip="true"]:hover:before
+{
+	content: attr(title);
+	position: absolute;
+	background-color: black;
+	color:white;
+	top: 1em;
+	width: 12em;
+	border-radius: 20px;padding:5px 10px;
+}

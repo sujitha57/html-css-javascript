@@ -1,0 +1,44 @@
+@media screen and (min-width: 480px ) 
+{
+	#blocks,#boxes
+	{
+		margin-left: 200px;
+		margin-right: 30px;
+		height: 20px;
+	}
+	.loginpage
+	{
+		width:40%;
+		height:70%;
+		margin-left: 30%;
+		
+	}
+}
+img
+{
+	width: 120px;
+	height: 60px;
+}
+.loginpage
+{
+	border:.5px solid black;
+	border-radius: 5px;
+	border-width: 50%;
+	box-shadow: 5px 5px 5px grey;
+	padding: 10px;
+}
+input[type=checkbox]
+{
+	width: 15px;
+	height: 15px;
+}
+label,a
+{
+	font-size: 20px;
+	color: blue;
+}
+#text
+{
+	font-size: 20px;
+	color: black;
+}

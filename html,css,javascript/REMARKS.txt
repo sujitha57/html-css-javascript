@@ -1,0 +1,27 @@
+doctype
+Semantic tags
+audio and video tags
+Html4 vs html5
+meta tags
+html5 API (after javascript)
+CANVAS AND SVG
+
+Doubts:
+id vs class in html.
+HTML5 new elements. (aside element)
+Floating and Non floating elements in CSS.
+
+Media queries:
+1. Hover states 
+	 Modernizer
+	 In case of no touch applying hover styles
+2. Contrast
+	Try your site ouside in the sun.
+	Try your site bed when its dark.
+	Take it with you.
+3. Readability
+	Small screen!= small type
+	increasing font size
+
+	
+Javascript API properties

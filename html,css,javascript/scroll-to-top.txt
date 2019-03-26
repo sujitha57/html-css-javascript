@@ -1,0 +1,16 @@
+link: function ($scope, elem){
+                $(window).scroll( function(){
+                    var appcontainer = $(window).scrollTop();
+                    if (appcontainer <= 0) {
+                        elem.fadeOut('fast');
+                    } else {
+                        elem.fadeIn();
+                    }
+                });
+
+                elem.bind('click', function(){
+                    $('html, body').animate({ scrollTop: 0 }, 1000, function(){
+                        elem.fadeOut();
+                    });
+                });
+            }

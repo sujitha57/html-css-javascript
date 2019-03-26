@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Enter your name: <input type="text" id="fname" onblur="fnmsg()" contenteditable>
+<p id="demo"></p>
+Enter your lastname:<input type="text" id="lname" onblur="lnmsg()" contenteditable>
+<p id="demo1"></p>
+
+<script>
+function fnmsg()
+{
+    let x = document.getElementById("fname");
+    let y= x.value;
+    let temp=0;
+    for(let i=0; i<y.length;i++)
+   	{
+    	let a=y.charAt(i);
+        if(a=='@' || a=='$'|| a=='%')
+        {
+        	document.getElementById("demo").innerHTML = "must be Alphabet";
+            temp=0;  
+        }
+        else
+        {
+        	temp=1;
+		}
+    }
+    if(temp==1)
+    {
+    	document.getElementById("demo").style.visibility="hidden";
+      
+    }
+    else
+    {
+    	fnmsg();
+    }
+    
+}
+function lnmsg()
+{
+	let x = document.getElementById("lname");
+    let y= x.value;
+    let temp=0;
+    for(let i=0; i<y.length;i++)
+   	{
+    	let a=y.charAt(i);
+        if(a=='@' || a=='$'|| a=='%')
+        {
+        	document.getElementById("demo1").innerHTML = "must be Alphabet";
+            temp=0;  
+        }
+        else
+        {
+        	temp=1;
+		}
+    }
+    if(temp==1)
+    {
+    	document.getElementById("demo1").style.display="none";
+        
+    }
+    else
+    {
+    	lnmsg();
+    }
+}
+</script>
+
+</body>
+</html>
+s

@@ -1,0 +1,74 @@
+.container
+{
+	margin: auto;
+	width: 50%;
+	border:1px solid black;
+	padding: 10px;
+}
+.content label
+{
+	width: 150px;
+	display: inline-block;
+	text-align: left;
+}
+.dob p
+{
+	width: 30px;
+	display: inline-block;
+
+}
+img
+{
+	width: 150px;
+	height: 100px;
+}
+.buttons
+{
+	text-align: right;
+}
+.description label
+{
+	width: 150px;
+	height: 40px;
+	display: inline-block;
+	text-align: left;
+}
+
+.Gender label
+{
+	width: 150px;
+	height: 30px;
+	display: inline-block;
+	text-align: left;
+}
+.uploading label
+{
+	width: 150px;
+	display: inline-block;
+	text-align:left;
+}
+.image label
+{
+	width: 150px;
+	display: inline-block;
+	text-align: left;
+}
+.hobbies 
+{
+	box-sizing: border-box;
+	width: 100%;
+
+}
+.hobbies label
+{
+	width: 24%;
+	display: inline-block;
+}
+/*ul li
+{
+	width: 150px;
+	display: inline;
+	list-style: none;
+	margin-left: 100px;
+}
+*/

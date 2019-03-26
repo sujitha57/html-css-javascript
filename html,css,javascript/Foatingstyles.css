@@ -1,0 +1,14 @@
+.box
+{
+	height: 100px;
+	width: 100px;
+}
+.bluebox
+{
+	background-color: blue;
+	float:left;
+}
+em
+{
+	color: #e07f07;
+}

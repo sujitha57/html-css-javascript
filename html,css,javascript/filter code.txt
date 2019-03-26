@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  background: red;
+  padding: 40p;
+  position: relative;
+  width: 50%;
+}
+p {
+  background: yellow;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 250px;
+  height: 150px
+}
+
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+</style>
+</head>
+<body>
+
+<h2>Slide in Overlay from the Left</h2>
+
+<div class="container">
+  <p></p>
+  <div class="overlay">
+    <div class="text">
+    <form>
+		 Name:<input type="text" name="name"><br>
+ 		Password:<input type="password" name="pwd">
+ 	</form>
+ </div>
+  </div>
+</div>
+
+</body>
+</html>

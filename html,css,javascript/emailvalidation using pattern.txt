@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The test() method returns true if it finds a match, otherwise it returns false.</p>
+<p>Click the button to search a string for the character "e".</p>
+Email:<input type="email" id="email" onblur="myFunction()">
+<p id="demo"></p>
+<p id="demo1">validation</p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("email").value;
+    var pattern = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+    var res = pattern.test(x);
+    document.getElementById("demo").innerHTML = res;
+    if(res==true)
+    {
+    	document.getElementById("demo1").innerHTML = "valid";
+	}
+    else
+    {
+    	document.getElementById("demo1").innerHTML = "invalid";
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login form</title>
+	<link rel="icon" 
+      type="image/jpg" 
+      href="../images/photos/logo.jpg">
+	<link rel="stylesheet" type="text/css" href="loginform.css">
+</head>
+<body>
+<div class="loginform">
+	<form action="#">
+		<img src="../images/photos/tibcologo.jpg"/>
+		<div class="username">
+			<label for="username" >Username:</label>
+			<input type="text" name="username" value="suchakal@tibco.com" id="username" required>
+		</div>
+		<div class="password">
+			<label for="password">Password:</label>
+			<input type="password" pattern=".{A-Za-z0-9}" title="must contain atleast one number and one alphabet" name="password" value="T1bc0@321"  id="password" required>
+		</div>
+		<div class="bottom">
+			<a href="#">Forgot password</a>
+			<input type="submit" name="Login" value="Login"><br><br>
+		</div>
+		<div class="remember">
+			<label><input type="checkbox" name="remember" value="remember" >
+			Remember me.</label>
+			<a href="#">Signup</a>
+		</div>
+	</div>
+	</form>
+</div>
+</body>
+</html>

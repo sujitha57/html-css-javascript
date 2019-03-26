@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Angular Js</title>
+</head>
+<body>
+  <script src="https://code.angularjs.org/1.6.9/angular.js"></script>
+  <div ng-app = "app">
+    <div ng-controller = "ctrl1">
+      {{name}}
+      {{id}}
+    </div>
+  <!--  <div ng-controller = "ctrl2">
+      {{id}}
+    </div>-->
+    <div ng-controller = "mctrl1">
+      {{fname}}
+      <div ng-controller = "mctrl2">
+        {{lname}}
+      </div>
+    </div>
+    <form ng-controller = "form">
+      <label>Firstname</label><input type="text" ng-model = "firstname"><br>
+      <label>lastname</label><input type="text" ng-model = "lastname"><br>
+    </form>
+  </div>
+  <script type="text/javascript">
+    var app = angular.module("app",[]);
+    app.controller('ctrl1',function($scope){
+      $scope.name = "Sujitha";
+      $scope.id = "525";
+    });
+    /*app.controller('ctrl2',function($scope){
+      $scope.id="525";
+    });*/
+    app.controller('mctrl1',function($scope){
+      $scope.fname = 'siri';
+    });
+    app.controller('mctrl2',function($scope){
+      $scope.lname = "chinni";
+    });
+    app.controller('form', function($scope){
+      $scope.firstname = 'Sujitha';
+      $scope.lastname = "chakali"
+    });
+  </script>
+</body>
+</html>

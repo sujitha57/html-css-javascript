@@ -1,0 +1,70 @@
+header
+{
+	height: 10%;
+	font-size: 30px;
+	color: black;
+	position: relative;
+	margin-left: 25%;
+	margin-right: 25%;
+	background-color: rgba(0,0,0,0.1);
+	text-align: center;
+	text-decoration: underline;
+	padding: 0.5em;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px grey;
+}
+.demo
+{
+	border:2px solid black;
+	border-radius: 5px;
+	border-width: 50%;
+	box-shadow: 5px 5px 10px grey;
+	margin-left: 25%;
+	margin-right: 25%;
+	padding: 10px;
+}
+.demo label
+{
+	max-width: 200px;
+	display: inline-block;
+}
+
+li
+{
+	list-style: none;
+}
+.dob
+{
+	position: relative;
+	left: 30%;
+}
+#gender input[type=radio], #gender label
+{
+	position: relative;
+	left: 30%;
+
+}
+#description input[type=text]
+{
+	width: 400px;
+	height: 50px;
+}
+.hobbies li
+{
+	position: relative;
+	left: 30%;
+}
+input[type=checkbox], input[type=radio]
+{
+	width:15px;
+	height: 15px;
+	border-radius: 5px;
+}
+input[type=checkbox]:checked+label
+{
+	color: blue;
+}
+.hobbies:active
+{
+	color: red;
+}

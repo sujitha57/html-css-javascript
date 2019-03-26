@@ -1,0 +1,33 @@
+body
+{
+	padding:0;
+	margin:0; 
+}
+#Buttons
+{
+	/*width: 100px;
+	position: absolute;
+	margin-left: 260px;*/
+	float: left;
+	width: 150px;
+}
+#links
+{
+	/*position:absolute;
+	background-color:yellow;
+	width:250px;*/
+	float:left;
+	width:150px;
+}
+#content
+{
+	/*background-color:red;
+	margin-left:520px;*/
+	float: left;
+	width:700px;
+}
+img
+{
+	width:200px;
+	height:200px;
+}

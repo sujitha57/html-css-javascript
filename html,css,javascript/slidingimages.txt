@@ -1,0 +1,70 @@
+<h3>Pure Javascript</h3>
+<div class="container">
+  <button class='toggleButton' id="rightmove"value='right' onclick="moving(1)">Right</button>
+  <div class="wrapper">
+  <div class='box' id="box">
+    <div id="num1" class="numbers"> 1 </div>
+    <div id="num2" class="numbers"> 2 </div>
+    <div id="num3" class="numbers"> 3 </div>
+    <div id="num4" class="numbers"> 4 </div>
+    <div id="num5" class="numbers"> 5 </div>
+    <div id="num6" class="numbers"> 6 </div>
+    <div id="num7" class="numbers"> 7 </div>
+    <div id="num8" class="numbers"> 8 </div>
+    <div id="num9" class="numbers"> 9 </div>
+    <div id="num10" class="numbers"> 10 </div>
+  </div> 
+  </div>
+  <button class="toggleButton" id="leftmove" value ="left" onclick="moving(-1)">Left </button>
+ 
+  
+  <p id="demo">something</p>
+</div>
+
+
+
+.wrapper
+{
+  width:200px;
+  overflow:hidden;
+  background-color: pink;
+  
+}
+.box {
+  background-color: blue;
+  display:flex; 
+  transition :2s;
+}
+.box>div{
+  background-color: #f1f1f1;
+  margin:5px;
+  padding:20px;
+  font-size:30px;
+}
+
+
+
+
+var number = document.getElementsByClassName("numbers");
+var left= 0;
+var right =1;
+function moving(n)
+{
+  document.getElementById("demo").innerHTML= left;
+  if(n == 1)
+  {
+    left++; 
+    if(left > number.length)
+      document.getElementById("right").disabled = true;
+    document.getElementById("box").style.transform = "translateX(80px)"; 
+  }
+  if(n == -1)
+  {
+    left--
+   document.getElementById("box").style.transform = "translateX(-80px)"; 
+  }
+}
+
+
+
+

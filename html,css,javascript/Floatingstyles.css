@@ -1,0 +1,41 @@
+body
+{
+	overflow: scroll;
+	height: 1000px;
+}
+.box
+{
+	height: 100px;
+	width: 100px;
+}
+.bluebox
+{
+	background-color: blue;
+	float:left;
+}
+.redbox
+{
+	background-color: red;
+	float: right;
+}
+.greybox
+{
+	background-color: grey;
+	float: left;
+	
+}
+.orangebox
+{
+	background-color: orange;	
+	float: left;
+	
+}
+.pinkbox
+{
+	background-color: pink;
+	margin:0 auto;
+}
+em
+{
+	color: #e07f07;
+}

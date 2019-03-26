@@ -1,0 +1,33 @@
+//image slider displaying
+
+
+var left = 1, middle = 2, right = 3;
+function nextSlide(n)
+{
+  var i;
+  var slides = document.getElementsByClassName("images");
+   left += n;
+   middle += n;
+   right += n;
+   if (right > slides.length)
+   {
+     left = slides.length-2;
+     middle = slides.length-1;
+     right = slides.length;
+     document.getElementById(" right").style.disabled = true;
+   }
+   if (left < 1)
+   {
+     left = 1;
+     middle = 2;
+     right = 3;
+     document.getElementById("left").style.disabled = true;
+   }
+   for (i = 0; i < slides.length; i++)
+   {
+       slides[i].style.display = "none";
+   }
+   slides[left-1].style.display = "inline-block";
+   slides[middle-1].style.display = "inline-block";
+   slides[right-1].style.display = "inline-block";
+ }

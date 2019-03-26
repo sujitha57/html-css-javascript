@@ -1,0 +1,44 @@
+header,footer
+{
+	padding: 1em;
+	color: white;
+	background-color: black;
+	text-align: center;
+}
+nav
+{
+	padding: 0.5em;
+	background-color: white;
+	border-style: solid;
+}
+h1
+{
+	text-align: center;
+	color: white;
+}
+h2
+{
+	text-align: center;
+	color: blue;
+}
+section
+{
+	float: bottom;
+	width: 200px;
+	padding: 1em;
+	border-right: 1px solid grey;
+	border-bottom: 1px solid grey
+}
+article
+{
+	width:200px;
+	padding:1em;
+	border-right: 1px solid grey;
+	border-bottom: 1px solid grey
+}
+aside
+{
+	position: absolute;
+	left: 300px;
+	top: 200px;
+}

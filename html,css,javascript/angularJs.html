@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta chrset="UTF 8">
+	<title>Event Registration</title>
+	<!--<link rel="stylesheet" href="css/bootstrap.css"/>-->
+</head>
+<body >
+<h1> Guru99 Global Event</h1>
+<script src="https://code.angularjs.org/1.6.9/angular.js"></script>
+
+<div ng-app="DemoApp" ng-controller="DemoController">
+<h1>Topics</h1>
+<ul><li ng-repeat="tpname in TopicNames">
+		{{tpname.name}}
+		</li></ul>
+<div ng-Controller = "DemoCtrl">
+	<form>	
+		Name : <input type="text" ng-model="pName" value="Guru99"><br>
+		&nbsp;&nbsp;&nbsp;
+		Topic : <br>&nbsp;&nbsp;&nbsp;
+
+		<select ng-model="Topics">
+		<option>{{Topics.option1}}</option>
+		<option>{{Topics.option2}}</option>
+		</select>
+	</form>
+</div>
+</div>
+
+<script>
+	var app = angular.module('DemoApp',[]);
+	app.controller('DemoController', function($scope){
+
+	$scope.TopicNames =[
+		{name: "What controller do from Angular's perspective"},
+		{name: "Controller Methods"},
+		{name: "Building a basic controller"}];
+		});
+
+		app.controller('DemoCtrl', function($scope){
+		$scope.pName="Guru99";
+
+			$scope.Topics =
+			{
+				option1 : "Controller",
+				option2 : "Module"
+			};     });
+</script>
+
+
+
+
+</body>
+</html>

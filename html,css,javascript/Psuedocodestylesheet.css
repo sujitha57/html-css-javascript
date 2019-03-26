@@ -1,0 +1,33 @@
+header
+{
+	padding: 1em;
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	border:1px solid red;
+}
+table
+{
+	width:100%;
+	border:1px solid black;
+	border-collapse: collapse;	
+}
+td,th
+{
+	border:1px solid black;
+	text-align: center;
+	padding: 0.5em;
+}
+tr:first-of-type
+{
+	background-color: yellow;
+}
+tr:nth-child(even)
+{
+	background-color: #dddddd;
+}
+tr:last-of-type
+{
+	text-decoration:line-through;
+}
